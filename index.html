@@ -1,21 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>JavaScript Fundamentals Assignment</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <h1>🚀 JavaScript Fundamentals Demo</h1>
-  <p id="greeting">Hello! Click the button to see magic happen.</p>
+    <head>
+        <meta title="Practise Site" description="A simple practise site">
+        <meta charset="UTF-8">
+        <meta title="viewport" description="initial-scale=1.0 width=device-width">
+        <link rel="stylesheet" href="style.css">
+        <title> Week 5 Assignment Site</title> 
+    </head>
+    <body>
+        <div class="container">
+            <div class="header">
+                <h1> Task Manager 1.0 </h1>
+                <p> The Premiere Organizer!</p>
+            </div>
+            <!-- Input Section for new tasks-->
+            <div class="input-section">
+                <div class="input-container">
+                    <input type="text" id="taskInput" placeholder="Whatcha wanna do?">
+                    <button id="addBtn">Add</button>
+                </div>
+                <!-- Filter buttons to show different task categories-->
+                <div class="filter-section">
+                    <button class="filter-btn active" data-filter="all">All Tasks</button>
+                    <button class="filter-btn" data-filter="active">Active</button>
+                    <button class="filter-btn" data-filter="compleeted">Completed</button>
+                </div>
+            </div>
+            <!-- Tasks display section-->
+            <div class="tasks-section">
+                <div class="task-counter" id="taskCounter">
+                    0 tasks remaining
+                </div>
 
-  <button id="changeTextBtn">Change Greeting</button>
-  <button id="toggleColorBtn">Toggle Background</button>
-  <button id="countdownBtn">Start Countdown</button>
-
-  <h2>Results:</h2>
-  <div id="results"></div>
-
-  <script src="script.js"></script>
-</body>
+                <!--List Showing all tasks-->
+                <ul id="taskList">
+                    <!--Tasks will be added automatically-->
+                </ul>
+            </div>
+        </div>
+        <script src="script.js"></script>
+    </body>
 </html>
